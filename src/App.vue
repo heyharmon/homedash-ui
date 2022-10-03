@@ -1,5 +1,5 @@
 <template>
-  <main class="container max-width-xl">
+  <main class="container">
     <router-view/>
   </main>
 </template>
