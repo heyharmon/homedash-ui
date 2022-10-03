@@ -104,10 +104,10 @@ onMounted(() => {
 
 <style lang="scss">
   #app {
-    // background-color: #f5f5f5;
+    background-color: #f5f5f5;
     height: 100vh;
     
-    background: linear-gradient(0deg, #eaf8ff 0%, #ffffff 100%);
+    // background: linear-gradient(0deg, #eaf8ff 0%, #ffffff 100%);
 
     
     // filter: blur(8px);
