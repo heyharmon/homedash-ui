@@ -1,5 +1,7 @@
 <template>
-  <router-view/>
+  <main class="container max-width-xl">
+    <router-view/>
+  </main>
 </template>
 
 <style lang="scss">
