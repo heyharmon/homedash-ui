@@ -1,18 +1,18 @@
 <template>
   <div class="flex align-center gap-sm">
-    <div class="flex flex-column card card--shadow items-center gap-xxs">
+    <div class="card card--shadow flex flex-column items-center gap-xxs padding-sm">
       <p>MON</p>
       <IconSun/>
       <p>72° &nbsp; <span class="color-contrast-low">60°</span></p>
     </div>
     
-    <div class="flex flex-column card card--shadow items-center gap-xxs">
+    <div class="card card--shadow flex flex-column items-center gap-xxs padding-sm">
       <p>TUE</p>
       <IconSunCloud/>
       <p>70° &nbsp; <span class="color-contrast-low">58°</span></p>
     </div>
     
-    <div class="flex flex-column card card--shadow items-center gap-xxs">
+    <div class="card card--shadow flex flex-column items-center gap-xxs padding-sm">
       <p>WED</p>
       <IconSunCloudRain/>
       <p>64° &nbsp; <span class="color-contrast-low">41°</span></p>

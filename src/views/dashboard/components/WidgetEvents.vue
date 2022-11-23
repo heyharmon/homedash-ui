@@ -1,6 +1,6 @@
 <template>
-  <div class="card card--shadow flex flex-column">
-    <div class="flex items-center justify-between margin-bottom-xs">
+  <div class="card card--shadow flex flex-column padding-md">
+    <div class="flex items-center justify-between margin-bottom-sm">
       <p class="flex items-center gap-xs text-md">
         <IconCalendar/>
         Coming up

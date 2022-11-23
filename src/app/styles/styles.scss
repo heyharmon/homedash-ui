@@ -98,9 +98,7 @@ Card
 -------------------------------- */
 .card {
   border-radius: var(--radius-lg);
-  padding: var(--space-md);
   background-color: var(--color-white);
-  // backdrop-filter: blur(20px);
   
   &--shadow {
     box-shadow: var(--shadow-sm);
