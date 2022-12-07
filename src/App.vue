@@ -8,7 +8,7 @@
 @import '@/app/styles/styles.scss';
 
 #app {
-  background-color: #e1e1e1;
+  background-color: #f1f3f2;
   // background: linear-gradient(0deg, #eaf8ff 0%, #ffffff 100%);
   height: 100vh;
   

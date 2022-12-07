@@ -9,10 +9,10 @@
     </div>
     
     <div class="flex flex-column gap-sm padding-top-xs">
-      <div v-for="(task, index) in tasks" :key="index" class="flex justify-between items-center border radius-md padding-y-xs padding-x-sm">
+      <div v-for="(task, index) in tasks" :key="index" class="flex justify-between items-center border radius-lg padding-y-xs padding-x-sm">
         <div>
-          <p class="text-md margin-bottom-xxxs">{{ task.title }}</p>
-          <p class="text-sm color-contrast-medium">{{ task.due }} • {{ task.owner }}</p>
+          <p class="text-sm color-contrast-medium margin-bottom-xxxs">{{ task.due }} • {{ task.owner }}</p>
+          <p class="text-md">{{ task.title }}</p>
         </div>
         
         <IconCheck :class="task.completed ? 'color-success' : 'color-contrast-lower'"/>

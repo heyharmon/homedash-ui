@@ -5,6 +5,9 @@
   // --radius-sm: calc(var(--radius)/2);
   // --radius-md: var(--radius);
   // --radius-lg: calc(var(--radius)*2);
+  --radius-xl: calc(var(--radius)*3);
+  --radius-xxl: calc(var(--radius)*4);
+  --radius-xxxl: calc(var(--radius)*5);
 
   // box shadow - 👇 uncomment to modify default shadow values
   // --shadow-xs:  0 0.1px 0.3px rgba(0, 0, 0, 0.06),
@@ -12,9 +15,9 @@
   // --shadow-sm:  0 0.3px 0.4px rgba(0, 0, 0, 0.025),
   //               0 0.9px 1.5px rgba(0, 0, 0, 0.05), 
   //               0 3.5px 6px rgba(0, 0, 0, 0.1);
-  // --shadow-md:  0 0.9px 1.5px rgba(0, 0, 0, 0.03), 
-  //               0 3.1px 5.5px rgba(0, 0, 0, 0.08), 
-  //               0 14px 25px rgba(0, 0, 0, 0.12);
+  --shadow-md:  0 0.9px 1.5px rgba(0, 0, 0, 0.01), 
+                0 3.1px 5.5px rgba(0, 0, 0, 0.02), 
+                0 14px 25px rgba(0, 0, 0, 0.1);
   // --shadow-lg:  0 1.2px 1.9px -1px rgba(0, 0, 0, 0.014), 
   //               0 3.3px 5.3px -1px rgba(0, 0, 0, 0.038), 
   //               0 8.5px 12.7px -1px rgba(0, 0, 0, 0.085), 

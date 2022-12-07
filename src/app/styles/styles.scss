@@ -97,11 +97,11 @@ Card
 
 -------------------------------- */
 .card {
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xxl);
   background-color: var(--color-white);
   
   &--shadow {
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-md);
   }
   
   &--dark {

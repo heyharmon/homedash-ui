@@ -7,19 +7,24 @@
         <p>Monday, October 3</p>
       </div>
       
-      <WidgetWeather/>
+      <div class="flex-grow-0">
+        <WidgetWeather/>  
+      </div>
     </div>
     
-    <div class="col-12 flex flex-column gap-md">
+    <div class="flex flex-column gap-md">
       <WidgetEvents/>
       <WidgetTasks/>
     </div>
+    
+    <ModalCreateTask/>
   </div>
 </template>
 
 <script setup>
-// import Calendar from '@/app/components/Calendar.vue'
+// import Calendar from '@/app/components/AppCalendar.vue'
 import WidgetWeather from '@/views/dashboard/components/WidgetWeather.vue'
 import WidgetEvents from '@/views/dashboard/components/WidgetEvents.vue'
 import WidgetTasks from '@/views/dashboard/components/WidgetTasks.vue'
+import ModalCreateTask from '@/views/dashboard/modals/ModalCreateTask.vue'
 </script>
