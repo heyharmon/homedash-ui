@@ -1,4 +1,4 @@
-import { httpClient as HttpClient } from '@/app/api/httpClient'
+import { httpClient as HttpClient } from '@/App/Api/httpClient'
 
 const authApi = {
     /**
@@ -11,7 +11,7 @@ const authApi = {
      * @return promise
      */
     register(name, email, password, password_confirmation) {
-        return HttpClient.post(`/auth/register`, {
+        return HttpClient.post(`/Auth/register`, {
           name: name,
           email: email,
           password: password,
@@ -27,7 +27,7 @@ const authApi = {
      * @return promise
      */
     login(email, password) {
-        return HttpClient.post(`/auth/login`, {
+        return HttpClient.post(`/Auth/login`, {
           email: email,
           password: password,
         })
@@ -39,7 +39,7 @@ const authApi = {
      * @return promise
      */
     logout() {
-        return HttpClient.post(`/auth/logout`)
+        return HttpClient.post(`/Auth/logout`)
     },
 }
 

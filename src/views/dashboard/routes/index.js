@@ -1,4 +1,4 @@
-import Dashboard from '@/views/dashboard/Dashboard.vue'
+import Dashboard from '@/Views/Dashboard/Dashboard.vue'
 
 export default [
   {

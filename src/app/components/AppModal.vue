@@ -1,15 +1,15 @@
 <template>
   <div class="modal modal--animate-scale flex flex-center">
-    <div @click="close()" class="modal__overlay bg-black bg-opacity-30%"></div>
+    <div @click="close()" class="modal__overlay bg-white bg-opacity-30% backdrop-blur-10"></div>
     
     <div 
-      class="modal__content width-100% overflow-auto bg padding-md padding-x-md radius-md inner-glow shadow-md"
+      class="modal__content width-100% overflow-auto bg padding-md padding-x-md inner-glow shadow-md"
       :class="`max-width-${size}`"
     >
       <slot/>
     </div>
 
-    <button @click="close()" class="reset modal__close-btn modal__close-btn--outer display@md js-modal__close js-tab-focus">
+    <button @click="close()" class="reset modal__close-btn modal__close-btn--outer display@md">
       <svg class="icon icon--sm" viewBox="0 0 24 24">
         <g fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="3" x2="21" y2="21" /><line x1="21" y1="3" x2="3" y2="21" /></g>
       </svg>
@@ -66,6 +66,7 @@ const emit = defineEmits(['closed'])
 
 .modal__content {
   max-height: 90%;
+  border-radius: var(--radius-xxl);
 }
 
 /* close buttons */
@@ -146,7 +147,7 @@ const emit = defineEmits(['closed'])
     }
 
     &.modal--is-visible {
-      transition: opacity var(--modal-transition-duration), background-color var(--modal-transition-duration), visibility 0s;
+      transition: opacity backdrop-filter var(--modal-transition-duration), background-color var(--modal-transition-duration), visibility 0s;
 
       .modal__content {
         transform: scale(1); /* reset all transformations */

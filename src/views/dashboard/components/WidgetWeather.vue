@@ -24,9 +24,9 @@
 import axios from 'axios'
 import { onMounted } from 'vue'
 
-import IconSun from '@/domain/weather/icons/IconSun.vue'
-import IconSunCloud from '@/domain/weather/icons/IconSunCloud.vue'
-import IconSunCloudRain from '@/domain/weather/icons/IconSunCloudRain.vue'
+import IconSun from '@/Domain/Weather/Icons/IconSun.vue'
+import IconSunCloud from '@/Domain/Weather/Icons/IconSunCloud.vue'
+import IconSunCloudRain from '@/Domain/Weather/Icons/IconSunCloudRain.vue'
 
 const query = 'Salt Lake City, Utah'
 const lat = '40.760780'

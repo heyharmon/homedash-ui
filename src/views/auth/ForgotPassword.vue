@@ -30,9 +30,9 @@
 <script setup>
 import { ref } from 'vue'
 import { useRoute } from 'vue-router'
-import { useAuthStore } from '@/domain/auth/store/useAuthStore'
-import LayoutWithoutNavigation from '@/app/layouts/LayoutWithoutNavigation.vue'
-import AppInput from '@/app/components/forms/AppInput.vue'
+import { useAuthStore } from '@/Domain/Auth/Store/useAuthStore'
+import LayoutWithoutNavigation from '@/App/Layouts/LayoutWithoutNavigation.vue'
+import AppInput from '@/App/Components/Forms/AppInput.vue'
 
 const route = useRoute()
 const authStore = useAuthStore()

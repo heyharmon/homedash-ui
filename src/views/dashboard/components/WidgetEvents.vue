@@ -2,8 +2,8 @@
   <div class="card card--shadow flex flex-column padding-md">
     <div class="flex items-center justify-between margin-bottom-sm">
       <p class="flex items-center gap-xs text-md">
-        <IconCalendar/>
-        Coming up
+        <EventsBadge/>
+        Events
       </p>
       <IconPlus size="md"/>
     </div>
@@ -21,6 +21,7 @@
 </template>
 
 <script setup>
-import IconPlus from '@/app/components/icons/IconPlus.vue'
-import IconCalendar from '@/domain/events/icons/IconCalendar.vue'
+import IconPlus from '@/App/Components/Icons/IconPlus.vue'
+import IconCalendar from '@/Domain/events/Icons/IconCalendar.vue'
+import EventsBadge from '@/Domain/Events/Components/EventsBadge.vue'
 </script>

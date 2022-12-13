@@ -1,7 +1,7 @@
-import Register from '@/views/auth/Register.vue';
-import Login from '@/views/auth/Login.vue';
-import ForgotPassword from '@/views/auth/ForgotPassword.vue';
-import Logout from '@/views/auth/Logout.vue';
+import Register from '@/Views/Auth/Register.vue';
+import Login from '@/Views/Auth/Login.vue';
+import ForgotPassword from '@/Views/Auth/ForgotPassword.vue';
+import Logout from '@/Views/Auth/Logout.vue';
 
 export default [
   {

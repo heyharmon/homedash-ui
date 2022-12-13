@@ -1,5 +1,5 @@
 import axios from 'axios'
-// import { useAuthStore } from '@/domain/auth/store/useAuthStore'
+// import { useAuthStore } from '@/Domain/Auth/Store/useAuthStore'
 
 /**
 * Setup Http client

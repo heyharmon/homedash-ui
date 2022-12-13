@@ -6,7 +6,7 @@
 // TODO: Let's just use the store for this. Make it async.
 import { onMounted } from 'vue'
 import { useRouter } from 'vue-router'
-import { useAuthStore } from '@/domain/auth/store/useAuthStore'
+import { useAuthStore } from '@/Domain/Auth/Store/useAuthStore'
 
 const router = useRouter()
 const authStore = useAuthStore()

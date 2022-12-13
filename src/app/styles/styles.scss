@@ -1,5 +1,15 @@
 @import 'node_modules/codyhouse-framework/main/assets/css/base';
-@import 'custom-style';
+@import 'Custom';
+
+.widget {
+  &__list-item {
+    border-bottom: 1px solid var(--color-contrast-lower);
+    
+    &:last-child {
+      border: 0;
+    }
+  }
+}
 
 /* --------------------------------
 

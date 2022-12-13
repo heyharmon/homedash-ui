@@ -1,30 +1,41 @@
 <template>
-  <div class="card card--shadow flex flex-column padding-md">
+  <div class="widget card card--shadow flex flex-column padding-md">
     <div class="flex items-center justify-between margin-bottom-sm">
       <p class="flex items-center gap-xs text-md">
-        <IconCheck/>
+        <TasksBadge/>
         Todos
       </p>
-      <IconPlus size="md"/>
+      <IconPlus @click="store.toggleCreateModal()" size="md"/>
     </div>
     
-    <div class="flex flex-column gap-sm padding-top-xs">
-      <div v-for="(task, index) in tasks" :key="index" class="flex justify-between items-center border radius-lg padding-y-xs padding-x-sm">
-        <div>
-          <p class="text-sm color-contrast-medium margin-bottom-xxxs">{{ task.due }} • {{ task.owner }}</p>
+    <div class="widget__list flex flex-column padding-top-xs">
+      <div 
+        v-for="task in store.tasks" 
+        :key="task.id" 
+        class="widget__list-item flex justify-between items-center padding-y-sm"
+      >
+        <div class="flex flex-column gap-xxs">
+          <p class="text-sm color-contrast-medium">{{ task.due }} • {{ task.owner }}</p>
           <p class="text-md">{{ task.title }}</p>
         </div>
         
         <IconCheck :class="task.completed ? 'color-success' : 'color-contrast-lower'"/>
       </div>
     </div>
+    
+    <TaskCreateModal/>
   </div>
 </template>
 
 <script setup>
 import { reactive } from 'vue'
-import IconPlus from '@/app/components/icons/IconPlus.vue'
-import IconCheck from '@/app/components/icons/IconCheck.vue'
+import { useTaskStore } from '@/Domain/Tasks/Store/useTaskStore'
+import TaskCreateModal from '@/Domain/Tasks/Modals/TaskCreateModal.vue'
+import TasksBadge from '@/Domain/Tasks/Components/TasksBadge.vue'
+import IconPlus from '@/App/Components/Icons/IconPlus.vue'
+import IconCheck from '@/App/Components/Icons/IconCheck.vue'
+
+const store = useTaskStore()
 
 const tasks = reactive([
   {

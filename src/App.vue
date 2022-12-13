@@ -5,10 +5,10 @@
 </template>
 
 <style lang="scss">
-@import '@/app/styles/styles.scss';
+@import '@/App/Styles/styles.scss';
 
 #app {
-  background-color: #f1f3f2;
+  background-color: #f5f7fb;
   // background: linear-gradient(0deg, #eaf8ff 0%, #ffffff 100%);
   height: 100vh;
   
