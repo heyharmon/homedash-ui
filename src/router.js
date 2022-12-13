@@ -1,11 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { useAuthStore } from '@/Domain/Auth/Store/useAuthStore'
 
-// import auth from '@/Views/Auth/Routes/index.js'
 import dashboard from '@/Views/Dashboard/Routes/index.js'
 
 const routes = [
-  // ...auth,
   ...dashboard,
   // {
   //   path: '/',
